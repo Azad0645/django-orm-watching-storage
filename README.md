@@ -13,12 +13,12 @@
 - DB_NAME=Название базы данных
 - DB_USER=Имя пользователя 
 - DB_PASSWORD=Пароль пользователя 
-- SECRET_KEY=Секретный ключ 
-- DEBUG=True
-- ALLOWED_HOSTS=localhost,127.0.0.1
+- SECRET_KEY=Секретный ключ Django. Используется для обеспечения криптографической подписи и должен иметь уникальное, непредсказуемое значение
+- DEBUG=True (Булевое значение, включающее/выключающее режим отладки)
+- ALLOWED_HOSTS=localhost,127.0.0.1 (Список строк, представляющих имена хостов/доменов, которые может обслуживать этот сайт Django)
 
 Установка зависимостей:
-- Python 3 должен быть уже установлен.
+- Python 3.12 должен быть уже установлен.
 
 ```bash
 pip install -r requirements.txt
@@ -48,12 +48,12 @@ Create .env file in the project root folder and fill it with the following envir
 - DB_NAME=Database name
 - DB_USER=Username
 - DB_PASSWORD=User password 
-- SECRET_KEY=Secret key
-- DEBUG=True
-- ALLOWED_HOSTS=localhost,127.0.0.1
+- SECRET_KEY= Django secret key. This is used to provide cryptographic signing, and should be set to a unique, unpredictable value 
+- DEBUG=True (A boolean that turns on/off debug mode)
+- ALLOWED_HOSTS=localhost,127.0.0.1 (A list of strings representing the host/domain names that this Django site can serve) 
 
 Installing dependencies:
-- Python 3 must already be installed.
+- Python 3.12 must already be installed.
 
 ```bash
 pip install -r requirements.txt
